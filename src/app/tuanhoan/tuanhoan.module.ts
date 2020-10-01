@@ -8,8 +8,9 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzRadioModule } from 'ng-zorro-antd/radio'; 
-import { NzAvatarModule, NzCardModule, NzGridModule, NzIconModule } from 'ng-zorro-antd';
-import { TuanhoanComponent } from './tuanhoan.component';
+import { NzAvatarModule, NzCardModule, NzGridModule, NzIconModule } from 'ng-zorro-antd'; 
+import { TuanhoanComponent } from './tuanhoan.component'; 
+import { AppCardModule } from '../app-card/AppCardModule';
 
 const routes: Routes = [{ path: '', component: TuanhoanComponent }];
 
@@ -25,7 +26,8 @@ const routes: Routes = [{ path: '', component: TuanhoanComponent }];
     NzCardModule,
     NzGridModule,
     NzIconModule ,
-    NzCardModule
+    NzCardModule,
+    AppCardModule, 
   ],
   declarations: [TuanhoanComponent],
   exports: [RouterModule],

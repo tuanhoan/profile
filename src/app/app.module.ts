@@ -8,12 +8,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NZ_I18N } from 'ng-zorro-antd/i18n';
 import { en_US } from 'ng-zorro-antd/i18n';
 import { registerLocaleData } from '@angular/common';
-import en from '@angular/common/locales/en';
-import { NzButtonModule } from 'ng-zorro-antd/button/button.module';
-import { NgZorroAntdModule, NzBreadCrumbModule, NzButtonComponent, NzLayoutModule, NzMenuModule } from 'ng-zorro-antd';
+import en from '@angular/common/locales/en'; 
+import { NgZorroAntdModule, NzBreadCrumbModule, NzLayoutModule, NzMenuModule } from 'ng-zorro-antd';
 import { AppRoutingModule } from './app-routing.module';
-import { AddCardComponent } from './add-card/add-card.component';
-
+ 
+import { AppCardModule } from './app-card/AppCardModule'; 
+ 
 registerLocaleData(en);
 
 @NgModule({
@@ -29,7 +29,8 @@ registerLocaleData(en);
     NzMenuModule,
     NzLayoutModule, 
     NzBreadCrumbModule, 
-    NgZorroAntdModule
+    NgZorroAntdModule,
+    AppCardModule
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]

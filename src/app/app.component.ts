@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'profile'; 
-  isCollapsed = false;
+  isCollapsed = true;
   isLoadingOne = false;
   isLoadingTwo = false;
 

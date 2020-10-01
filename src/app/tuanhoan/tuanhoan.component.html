@@ -3,33 +3,41 @@
     <div class="inner-box">
       <button nz-button nzType="primary" (click)="loadFacebook()" [nzLoading]="isLoadingOne" nzBlock><i nz-icon
           nzType="facebook" nzTheme="outline"></i>Facebook</button>
-      <button nz-button nzType="primary" (click)="loadFacebook()" [nzLoading]="isLoadingOne" nzBlock><i nz-icon
+      <button nz-button nzType="primary" (click)="loadInstagram()" [nzLoading]="isLoadingTwo" nzBlock><i nz-icon
           nzType="instagram" nzTheme="outline"></i>Instagram</button>
-      <button nz-button nzType="primary" (click)="loadFacebook()" [nzLoading]="isLoadingOne" nzBlock><i nz-icon
-          nzType="zalo" nzTheme="outline"></i>Zalo</button>
+      <button nz-button nzType="primary" (click)="loadZalo()" [nzLoading]="isLoadingThree" nzBlock><i nz-icon
+          nzType="send" nzTheme="outline"></i>Zalo</button>
 
     </div>
   </div>
   <div nz-col class="gutter-row" [nzSpan]="12">
     <div class="inner-box">
-      <button nz-button nzType="primary" (click)="loadFacebook()" [nzLoading]="isLoadingOne" nzBlock>Click me!</button>
-      <button nz-button nzType="primary" (click)="loadFacebook()" [nzLoading]="isLoadingOne" nzBlock>Click me!</button>
-      <button nz-button nzType="primary" (click)="loadFacebook()" [nzLoading]="isLoadingOne" nzBlock>Click me!</button>
+      <button nz-button nzType="primary" (click)="loadSkype()" [nzLoading]="isLoadingFour" nzBlock><i nz-icon
+        nzType="skype" nzTheme="outline"></i>Skype</button>
+      <button nz-button nzType="primary" (click)="loadTiktok" [nzLoading]="isLoadingFive" nzBlock><i nz-icon
+        nzType="camera" nzTheme="outline"></i>TikTok</button>
+      <button nz-button nzType="primary" (click)="loadTwitter()" [nzLoading]="isLoadingSix" nzBlock><i nz-icon
+        nzType="twitter" nzTheme="outline"></i>Twitter</button>
     </div>
   </div>
 </div>
+<!-- 
+<div nz-row nzJustify="center" nzAlign="middle">
+  <app-card [image] = "img" [tittle] = "tittle" [description] = "description" ></app-card>
+</div>>  -->
 
-<div nz-row [nzGutter]="{ xs: 8, sm: 16, md: 24, lg: 32 }" nzJustify="center">
-  <div nz-col class="gutter-row" [nzSpan]="6" >
-    <div class="inner-box" nzAlign = 'middle'>
-      <nz-card nzHoverable style="width:240px" [nzCover]="coverTemplate">
-        <nz-card-meta nzTitle="Europe Street beat" nzDescription="www.instagram.com"></nz-card-meta>
-      </nz-card>
-      <ng-template #coverTemplate>
-        <img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />
-      </ng-template>
+<div nz-row nzJustify="center" nzAlign="middle">
+  <nz-carousel nzAutoPlay style="width: 240px">
+    <div nz-carousel-content *ngFor="let i of listLink">
+      <app-card [image] = "img" [tittle] = "tittle" [description] = "description" ></app-card> 
+      <!-- <img src="{{i}}" alt="ccc"> -->
+      <!-- <h2>"{{i}}"</h2> -->
     </div>
-  </div>
-</div>
+  </nz-carousel>
+</div>> 
+
+
+
+
 
 
