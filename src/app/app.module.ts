@@ -12,12 +12,13 @@ import en from '@angular/common/locales/en';
 import { NzButtonModule } from 'ng-zorro-antd/button/button.module';
 import { NgZorroAntdModule, NzBreadCrumbModule, NzButtonComponent, NzLayoutModule, NzMenuModule } from 'ng-zorro-antd';
 import { AppRoutingModule } from './app-routing.module';
+import { AddCardComponent } from './add-card/add-card.component';
 
 registerLocaleData(en);
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent 
   ],
   imports: [
     BrowserModule,
